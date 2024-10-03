@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人店铺</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="resource/logo.jpg" alt="店铺logo" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#products">商品</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="carousel">
+                <!-- 使用 flowImages 目录下的图片作为轮播图内容 -->
+                <img src="resource/homeImages/home01.jpg" alt="轮播图1" class="carousel-img">
+                <img src="resource/homeImages/home02.jpg" alt="轮播图2" class="carousel-img">
+                <img src="resource/homeImages/home03.jpg" alt="轮播图3" class="carousel-img">
+                <!-- 可以根据实际图片数量添加更多 -->
+            </div>
+        </section>
+
+        <section id="products">
+            <div class="section-header">
+                <h2>热门商品</h2>
+                <a href="all-products.html" class="view-all-btn">>> 查看全部商品</a>
+            </div>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="resource/flowImages/image1.jpg" alt="喜字门贴" class="product-img">
+                    <h3>喜字门贴</h3>
+                    <p>¥9.99</p>
+                </div>
+                <div class="product-item">
+                    <img src="resource/flowImages/image2.jpg" alt="礼宾花" class="product-img">
+                    <h3>礼宾花</h3>
+                    <p>¥12.90</p>
+                </div>
+                <div class="product-item">
+                    <img src="resource/flowImages/image3.jpg" alt="精美红包" class="product-img">
+                    <h3>精美红包</h3>
+                    <p>¥15.90</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>关于我们</h2>
+            <p>
+                "时尚婚庆” —— 您的专属婚庆用品专家，已匠心经营13+年。
+                我们主营婚礼庆典用品，包括各式婚礼庆典用品，以及喜糖、气球、红旗等，
+                同时本店还经营传统节日的特色挂饰，如过年必备的红灯笼、端午节的纸葫芦、清明节的祈福灯和精美假花等。
+                我们竭诚为您提供货品齐全、款式新颖的优质产品。
+                时尚婚庆，用心服务，只为见证您的幸福时刻！
+            </p>
+            <img src="resource/homeImages/team.jpg" alt="团队照片" class="team-img">
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            
+        </div>
+        <div class="qr-code">
+            <!-- 这里添加社交媒体图标 -->
+            <img src="resource/myInfo/qr-code-weixin-zfm.png" alt="扫码关注我们,微信" class="qr-code-img">
+            <img src="resource/myInfo/qr-code-weixin-zsl.png" alt="扫码关注我们,微信" class="qr-code-img">
+            <img src="resource/myInfo/qr-code-douyin.png" alt="扫码关注我们,抖音" class="qr-code-img">
+            <p>扫码关注我们</p>
+            <p>联系电话：13052605617  周凤梅  13052626491  张树立</p>
+        </div>
+        <p>&copy; 2024 时尚婚庆. 保留所有权利。</p>
+    </footer>
+
+    <button id="back-to-top">返回顶部</button>
+    <script src="carousel.js"></script>
+</body>
+</html>

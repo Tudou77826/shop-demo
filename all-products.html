@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>所有商品 - 我的个人店铺</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="all-products.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="resource/logo.jpg" alt="店铺logo" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="#products">商品</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">所有商品</h1>
+        <p class="page-description"> 时尚婚庆，用心服务，只为见证您的幸福时刻！</p>
+
+        <div class="search-bar">
+            <input type="text" placeholder="搜索商品...">
+            <button>搜索</button>
+        </div>
+
+        <div class="filter-sort">
+            <div class="filter">
+                <label for="category">类别：</label>
+                <select id="category">
+                    <option value="">全部</option>
+                    <option value="decoration">装饰品</option>
+                    <option value="gift">礼品</option>
+                    <option value="stationery">文具</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="price">价格范围：</label>
+                <select id="price">
+                    <option value="">全部</option>
+                    <option value="0-50">¥0 - ¥50</option>
+                    <option value="51-100">¥51 - ¥100</option>
+                    <option value="101+">¥101+</option>
+                </select>
+            </div>
+            <div class="sort">
+                <label for="sort">排序：</label>
+                <select id="sort">
+                    <option value="default">默认</option>
+                    <option value="price-asc">价格从低到高</option>
+                    <option value="price-desc">价格从高到低</option>
+                    <option value="newest">最新上架</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <!-- 示例商品，您可以根据实际情况添加更多 -->
+            <div class="product-item">
+                <img src="resource/flowImages/image1.jpg" alt="喜字门贴" class="product-img">
+                <h3>喜字门贴</h3>
+                <span class="category">装饰品</span>
+                <p class="price">¥9.99</p>
+                <button class="view-details">查看详情</button>
+            </div>
+            <div class="product-item">
+                <img src="resource/flowImages/image2.jpg" alt="礼宾花" class="product-img">
+                <h3>礼宾花</h3>
+                <span class="category">礼品</span>
+                <p class="price">¥12.90</p>
+                <button class="view-details">查看详情</button>
+            </div>
+            <div class="product-item">
+                <img src="resource/flowImages/image3.jpg" alt="精美红包" class="product-img">
+                <h3>精美红包</h3>
+                <span class="category">礼品</span>
+                <p class="price">¥15.90</p>
+                <button class="view-details">查看详情</button>
+            </div>
+            <!-- 添加更多商品项 -->
+        </div>
+
+        <div class="pagination">
+            <button class="prev">上一页</button>
+            <span class="page-number">第 1 页，共 5 页</span>
+            <button class="next">下一页</button>
+            <select class="items-per-page">
+                <option value="12">每页 12 项</option>
+                <option value="24">每页 24 项</option>
+                <option value="36">每页 36 项</option>
+            </select>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            
+        </div>
+        <div class="qr-code">
+            <!-- 这里添加社交媒体图标 -->
+            <img src="resource/myInfo/qr-code-weixin-zfm.png" alt="扫码关注我们,微信" class="qr-code-img">
+            <img src="resource/myInfo/qr-code-weixin-zsl.png" alt="扫码关注我们,微信" class="qr-code-img">
+            <img src="resource/myInfo/qr-code-douyin.png" alt="扫码关注我们,抖音" class="qr-code-img">
+            <p>扫码关注我们</p>
+            <p>联系电话：13052605617  周凤梅  13052626491  张树立</p>
+        </div>
+        <p>&copy; 2024 时尚婚庆. 保留所有权利。</p>
+    </footer>
+    <button id="back-to-top">返回顶部</button>
+    <script src="all-products.js"></script>
+</body>
+</html>
